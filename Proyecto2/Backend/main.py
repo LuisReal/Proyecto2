@@ -461,4 +461,4 @@ def getPlayList():
     respuesta = jsonify(Datos)
     return(respuesta)           
 if __name__ == "__main__":
-    app.run(debug=True, port = 8000)
+    app.run(threaded=True, host="0.0.0.0", port = 5000, debug=True)
